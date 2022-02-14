@@ -15546,7 +15546,7 @@ Epoch [   25/   25] | d_loss: 0.4312 | g_loss: 3.9134
 <ul>
 <li><p>I have selected a pretty standard DCGAN architecture for this project so I have a proved architecture that worked perfectly for this task, only minor changes were done like including one additional layer in discriminator and generator and weight initialization for batch normalization layers as I am describing later on.</p>
 </li>
-<li><p>I tried several number of epochs in order to see the evolution in the quality of the generated images, going from images that has some morphological attributes of a face to a very blurry images to almost defined faces with their distinguishible eyes, hair, mouth, nose, etc. I have to note that from 50 epochs to 100 the improvements in the quality of the generated images are small, as it is shown in the training loss plots that in the case of the generator from the epoch number 50 the loss is more unstable and increase steadily.</p>
+<li><p>I tried several number of epochs in order to see the evolution in the quality of the generated images, going from images that has some morphological attributes of a face to a very blurry images to almost defined faces with their distinguishible eyes, hair, mouth, nose, etc. I have to note that from 25 epochs to 100, passing through 50, the improvements in the quality of the generated images are small, as it is shown in the training loss plots that in the case of the generator from the epoch number 25 the loss is more unstable and increase steadily, and it seems to overfit.</p>
 </li>
 <li><p>As part of the standard architecture I have also chosen Adam as the optimizer with the optimization parameters as is in the original DCGAN article.</p>
 </li>
